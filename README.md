@@ -1,12 +1,14 @@
 # code notification
 ```luau
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTHUB-dev-god/gamehub/refs/heads/main/notification.lua"))()
+local notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTHUB-dev-god/gamehub/refs/heads/main/notification.lua"))()
 
-sendRobloxNotif("Friend Joined", "Alex baru saja join game", 5, "rbxassetid://12345678")
+notif.send("Success!", "Item berhasil dibeli", 5)
 ```
-**tutorial**
+**wait**
 ```luau
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTHUB-dev-god/gamehub/refs/heads/main/notification.lua"))()
+local notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTHUB-dev-god/gamehub/refs/heads/main/notification.lua"))()
 
-sendRobloxNotif("title", "description", 5, "rbxassetid://0")
+notif.send("Success!", "Item berhasil dibeli", 5)
+task.wait(6)
+notif.send("Friend Joined", "Alex baru saja join game", 5, "rbxassetid://12345678")
 ```
