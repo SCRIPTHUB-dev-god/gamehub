@@ -1,12 +1,12 @@
 # code notification
 ```luau
-local notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTHUB-dev-god/gamehub/refs/heads/main/notification.lua"))()
+local notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTHUB-dev-god/core-ui/refs/heads/main/notification.lua"))()
 
 notif.send("Success!", "Item berhasil dibeli", 5)
 ```
 **wait**
 ```luau
-local notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTHUB-dev-god/gamehub/refs/heads/main/notification.lua"))()
+local notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTHUB-dev-god/core-ui/refs/heads/main/notification.lua"))()
 
 notif.send("Success!", "Item berhasil dibeli", 5)
 task.wait(6)
